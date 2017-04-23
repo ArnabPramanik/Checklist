@@ -1,0 +1,7 @@
+<h1>Show view</h1>
+<h2><%= @item.title %></h2>
+<h3><%= @item.description%></h3>
+<%= link_to "Back", root_path%>
+<%= link_to "Delete", item_path(@item), method: :delete, data: {confirm: "Are you sure"} %>
+
+<%= link_to "Edit", edit_item_path(@item)%>
